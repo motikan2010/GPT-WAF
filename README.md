@@ -2,6 +2,13 @@
 
 This is a WAF (Web Application Firewall) using GPT-4. (Laravel only)
 
+
+## Install
+
+```
+composer require motikan2010/gpt-waf
+```
+
 ## Using
 
 ### Configuration of ".env"
