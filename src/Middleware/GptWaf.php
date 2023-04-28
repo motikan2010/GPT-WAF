@@ -32,9 +32,9 @@ class GptWaf
         $systemRole = env('GPT_WAF_SYSTEM_ROLE', 'You are Security engineer.');
 
         $rawHttpRequest = $this->getRawRequest();
-        $openapiKey = env('GPT_WAF_OPENAPI_KEY');
+        $openAiKey = env('GPT_WAF_OPEN_AI_API_KEY');
         $debugFlag = env('GPT_WAF_DEBUG_MODE', false);
-        if ( $this->isAttack($questionText, $systemRole, $rawHttpRequest, $openapiKey, $debugFlag) ) {
+        if ( $this->isAttack($questionText, $systemRole, $rawHttpRequest, $openAiKey, $debugFlag) ) {
             return $this->genBlockResponse(env('GPT_WAF_BLOCK_STATUS_CODE', 403));
         }
 

@@ -9,12 +9,12 @@ This is a WAF (Web Application Firewall) using GPT-4. (Laravel only)
 ### Required
 
 - `GPT_WAF_ENABLED` : GPT-WAF enabled or disabled
-- `GPT_WAF_OPENAPI_KEY` : OpenAPI API key for GPT-4
+- `GPT_WAF_OPEN_AI_API_KEY` : OpenAI API key for GPT-4
 
 ex.
 ```
 GPT_WAF_ENABLED=true
-GPT_WAF_OPENAPI_KEY=st-tGC**********
+GPT_WAF_OPEN_AI_API_KEY=st-tGC**********
 ```
 
 ### Option
