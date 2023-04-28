@@ -9,6 +9,13 @@ This is a WAF (Web Application Firewall) using GPT-4. (Laravel only)
 composer require motikan2010/gpt-waf
 ```
 
+## Performance
+
+| Status | Response Speed |
+|-|-|
+| **Disable** GPT WAF | 00.68 Sec 🚗 |
+| **Enable** GPT WAF | 19.04 Sec 🐢 |
+
 ## Using
 
 ### Configuration of ".env"
