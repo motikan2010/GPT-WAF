@@ -19,9 +19,23 @@ composer require motikan2010/gpt-waf
 
 ## Using
 
-### Configuration of ".env"
+### Edit routing & ".env" file
 
-### Required
+Set "`gpt-waf`" as the middleware for routing.
+
+```php
+Route::group(['middleware' => 'gpt-waf'], function () {
+  // Protect area
+});
+
+```
+
+The following changes will be enabled.  
+https://github.com/motikan2010/GPT-WAF-Test-App/commit/5a021e632488a585fc17d6360e2a89cd99a00eb6
+
+### Setting of ".env"
+
+#### Required
 
 - `GPT_WAF_ENABLED` : GPT-WAF enabled or disabled
 - `GPT_WAF_OPEN_AI_API_KEY` : OpenAI API key for GPT-4
@@ -32,7 +46,7 @@ GPT_WAF_ENABLED=true
 GPT_WAF_OPEN_AI_API_KEY=st-tGC**********
 ```
 
-### Option
+#### Option
 
 - `GPT_WAF_BLOCK_STATUS_CODE` : Status code at block (default: 403)
 - `GPT_WAF_DEBUG_MODE` : Output "question" and "answer" to log (default: false)
