@@ -2,6 +2,7 @@
 
 This is a WAF (Web Application Firewall) using GPT-4. (Laravel only)
 
+**Requirement : OpenAI API key for GPT-4.**
 
 ## Install
 
