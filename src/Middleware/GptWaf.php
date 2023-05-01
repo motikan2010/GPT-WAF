@@ -28,7 +28,7 @@ class GptWaf
             return $next($request);
         }
 
-        $questionText = env('GPT_WAF_QUESTION', "Begin your answer with 'Yes' or 'No'.\nIs the following HTTP request a possible cyber attack?\n-----\n");
+        $questionText = env('GPT_WAF_QUESTION', "Begin your answer with 'Yes' or 'No'.\nIs the following HTTP request a cyber attack?(Beware of false positives.)\n-----\n");
         $systemRole = env('GPT_WAF_SYSTEM_ROLE', 'You are Security engineer.');
 
         $rawHttpRequest = $this->getRawRequest();
