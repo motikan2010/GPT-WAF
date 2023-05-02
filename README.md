@@ -12,6 +12,12 @@ composer require motikan2010/gpt-waf
 
 ## Performance
 
+### Detect
+
+![](https://user-images.githubusercontent.com/3177297/235656055-5b5ccd06-c89b-40fc-99b8-9d6a4b727c57.png)
+
+### Speed
+
 | Status | Response Speed |
 |-|-|
 | **Disable** GPT WAF | 00.68 Sec 🚗 |
